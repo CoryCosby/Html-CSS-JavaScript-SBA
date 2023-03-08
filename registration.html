@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kid'z CodeZania - Registration</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="courses.html">Courses</a></li>
+                <li><a href="registration.html">Registration</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+ 
+</header>
+<body>
+	<h2>Course Registration Form</h2>
+	<form method="post" onsubmit="showAlert(event)">
+		<label for="courses">Select a Course:</label>
+		<select id="courses" name="courses">
+			<option value="Introduction to Scratch Programming">Introduction to Scratch Programming ($99)</option>
+			<option value="Java for Beginners">Java for Beginners ($199)</option>
+			<option value="Python for Data Science">Python for Data Science ($299)</option>
+			<option value="Web Development with HTML, CSS, and JavaScript">Web Development with HTML, CSS, and JavaScript ($399)</option>
+		</select>
+		<br><br>
+		<label for="pname">Parent's Full Name:</label>
+		<input type="text" id="pname" name="pname" required>
+		<br><br>
+		<label for="pnumber">Contact Number:</label>
+		<input type="text" id="pnumber" name="pnumber" required pattern="[0-9]{10}">
+		<br><br>
+        <label for="pemail">Email Address:</label>
+		<input type="text" id="pemail" name="pemail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br><br>
+		<label for="cname">Child's Name:</label>
+		<input type="text" id="cname" name="cname" required>
+		<br><br>
+		<label for="payment">Payment Method:</label>
+		<input type="radio" id="debit" name="payment" value="debit">
+		<label for="debit">Debit</label>
+		<input type="radio" id="inperson" name="payment" value="inperson">
+		<label for="inperson">Pay in Person</label>
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+    <script>
+        if (document.getElementById("debit").checked) {
+      // show the debit number text box
+      document.getElementById("debit-number").style.display = "block";
+    } else {
+      // hide the debit number text box
+      document.getElementById("debit-number").style.display = "none";
+    }
+    
+    </script>
+	
+</body>
+</html>
+

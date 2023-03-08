@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kid'z CodeZania - Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <style>
+            body {
+                background-color: #f2f2f2;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+            }
+            h1, h2, h3 {
+                color: #333333;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="courses.html">Courses</a></li>
+                <li><a href="registration.html">Registration</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section class="banner">
+			<h1>Contact Us</h1>
+			<h2>We'd Love to Hear From You</h2>
+		</section>
+
+		<section class="contact-form">
+			<h3>Send us a message</h3>
+			<form action="submit-form.php" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit">Send Message</button>
+			</form>
+		</section>
+
+		<section class="contact-info">
+			<h3>Other ways to contact us</h3>
+			<p><strong>Address:</strong> 00110010 Code ln., BitVille, USA</p>
+			<p><strong>Phone:</strong> 101-555-1234</p>
+			<p><strong>Email:</strong> info@kidzCodeZania.com</p>
+			<p><strong>Social Media:</strong> Follow us on <a href="https://www.facebook.com/kidzCodeZania">Facebook</a> and <a href="https://twitter.com/kidzCodeZania">Twitter</a> for updates and announcements.</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Kid'z CodeZania</p>
+	</footer>
+</body>
+</html>
